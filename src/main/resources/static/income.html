@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="x-ua-compatible" content="IE=edge,chrome=1">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="x-pjax-version" content="v173">
+<link rel="stylesheet" href="styles/index.css" />
+<link rel="stylesheet"  href="styles/cost.css" />
+<link rel="stylesheet"  href="styles/income.css" />
+<link rel="shortcut icon"   href="images/cal001.png">
+<title>收入管理</title>
+<script type="text/javascript" src="scripts/jquery-3.3.1.min.js"></script>
+<script type="text/javascript" src="scripts/jquery-3.3.1.js"></script>
+<script type="text/javascript" src="scripts/basevalue.js"></script>
+<script type="text/javascript" src="scripts/income.js"></script>
+<script type="text/javascript" src="scripts/query.js"></script>
+<script type="text/javascript">
+var page=1;
+	//主处理方法 
+	$(function(){
+		//按照日期查询 
+		$("#check").click(check);
+		//增加功能事件绑定,新增记录 
+		$("#add").click(add);
+		//根据日期和消费原因修改已经有的记录
+		// $("#edit").click(edit);
+		//单击返回,跳转到index页面 
+		$("#back").click(back);
+		
+		//查询收入总金额 
+		$("#sum").click(sum);
+	});
+</script>
+</head>
+<body>
+	<div class="div_golab">
+		<h2>收入管理</h2>
+		<div class="div_cost">
+		
+			<span>&nbsp;日期&nbsp;<input type="date" id="start_date"
+				value="" style="height: 22px;" /></span> <span>&nbsp;结束日期&nbsp;<input
+				type="date" id="end_date" value="" style="height: 22px;" />
+			</span> <span>&nbsp;收入来源&nbsp;<input type="text" id="costReason"
+				name="" />
+			</span> <span>&nbsp;收入金额&nbsp;<input type="text" id="price" name="" /></span>
+		</div>
+		<div class="div_btn">
+			<span>&nbsp;<input type="button" id="add" name="" value="&nbsp;增&nbsp;&nbsp;加&nbsp;" /></span>
+			<span>&nbsp;<input type="button" id="check" name="" value="&nbsp;查询收入记录&nbsp;" /></span> 
+			<span>&nbsp;<input type="button" id="sum" name="" value="&nbsp;查询收入总额&nbsp;" /></span>
+			<span></span> &nbsp;<input type="button" id="back" name="" value="&nbsp;返&nbsp;回&nbsp;" />
+		</div>
+		<div class="div_query">
+				<table  id="query_table"></table>
+		</div>
+	</div>
+</body>
+</html>

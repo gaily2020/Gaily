@@ -1,0 +1,47 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: 'Î¢ÈíÑÅºÚ';
+	background-color: #ffd0e8;
+	font-size: 15px;
+	text-align: center;
+
+}
+
+h2 {
+	font-size:25px;
+}
+
+input {
+	font-weight:bold;
+}
+
+div {
+	text-align: center;
+	margin:20px;
+}
+.guanli {
+	width:80px;
+	float:left;
+	
+}
+
+#cost, #income {
+	margin: 10px;10px;
+	border: none;
+	
+}
+
+input {
+		border: none;
+		background-color:#2fffff;
+}
+
+#exit {
+	float: right;
+	margin: auto; 20 px;
+	border: none;
+	
+}
+
+

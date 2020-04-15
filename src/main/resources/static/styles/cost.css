@@ -1,0 +1,37 @@
+* {
+	padding: 0;
+	margin: 0;
+	font-family: "微软雅黑";
+	background-color: #ffd0e8;
+	font-size: 15px;
+
+}
+
+div {
+	text-align: center;
+	margin: 20px;
+}
+
+
+#back {
+	float: right;0px;
+	margin: auto; 20px;
+	border: none;
+}
+
+#export{
+	float: right; 0px;
+	margin: auto; 20px;
+	border: none;
+}
+
+table {
+	margin: auto 10px;
+	width: 90%;
+	border-collapse: collapse;
+}
+
+table th, table td {
+	border: 1px solid #aaa;
+}
+

@@ -1,0 +1,12 @@
+
+#配置文件
+Server:
+  port: 8080
+
+Spring:
+  DataSource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    name: gaily
+    url: jdbc:mysql://localhost:3306/gaily
+    username: root
+    password: 654321

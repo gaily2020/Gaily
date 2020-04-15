@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>  
+<!DOCTYPE mapper PUBLIC "-//ibatis.apache.org//DTD Mapper 3.0//EN"      
+ "http://ibatis.apache.org/dtd/ibatis-3-mapper.dtd">
+<mapper namespace="com.gaily.dao.IncomeDao">
+	<insert id="save" parameterType="com.gaily.entity.Income">
+		insert into income_gaily (date,salary,incomeSource) values (#{date},#{salary},#{incomeSource})
+	</insert>
+	<select id="findByDate"  statementType="PREPARED"  parameterType= "java.util.Map" resultType= "map">
+		select * from income_gaily
+		<where>
+			<if test="start_date != null"> and date &gt;= #{start_date}</if>
+			<if test="end_date != null "> and date  <![CDATA[ <= ]]> #{end_date}</if>
+		</where>
+		<!--    <![CDATA[ <= ]]>  或者 &lt;= <=    -->
+		<!--    <![CDATA[ >= ]]>  或者 &gt;= >=   -->
+	</select>
+	<select id="sum"  statementType="PREPARED"  parameterType= "java.util.Map" resultType= "map">
+		select sum(salary) as totalSalary from income_gaily
+		<where>
+			<if test="start_date != null"> and date &gt;= #{start_date}</if>
+			<if test="end_date != null "> and date  <![CDATA[ <= ]]> #{end_date}</if>
+		</where>
+		<!--    <![CDATA[ <= ]]>  或者 &lt;= <=    -->
+		<!--    <![CDATA[ >= ]]>  或者 &gt;= >=   -->
+	</select>
+</mapper>
+
+
+
+
+
+
+
