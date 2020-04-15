@@ -13,6 +13,8 @@ import java.util.*;
 @Mapper
 public interface CostDao {
 
+
+    //
     void save(Cost cost);
 
     // 接口默认是public 修饰
