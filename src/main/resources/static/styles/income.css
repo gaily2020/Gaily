@@ -13,20 +13,18 @@ body {
 }
 
 .div_cost {
-	border: 1px solid #red;
+	border: 1px solid #002200;
 	margin: 25px;
-	25px;
-	background-color: #red;
+	background-color: #002200;
 	font-weight: normal;
 	width: auto;
 	height: 50px;
 }
 
 .div_back {
-	border: 1px solid #red;
+	border: 1px solid #002200;
 	margin: 15px;
-	10px;
-	background-color: #red;
+	background-color: #002200;
 	font-weight: normal;
 	float: right;
 	width: 20px;
@@ -34,10 +32,9 @@ body {
 }
 
 .div_btn {
-	border: 1px solid #red;
+	border: 1px solid #002200;
 	margin: 25px;
-	25px;
-	background-color: #red;
+	background-color: #002200;
 	font-weight: normal;
 	float: right;
 	width: 100px;
@@ -65,7 +62,7 @@ table {
 }
 
 table th, table td {
-	border: 1px solid #red;
+	border: 1px solid #002200;
 
 
 }
