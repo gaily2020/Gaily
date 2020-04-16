@@ -1,4 +1,4 @@
-#开始练习
-#开始登陆
-#git 命令
-#git 设置
+#1.idea配置git
+#2.idea配置github
+#3.github配置ssh  -key
+#4.访问远程Github
