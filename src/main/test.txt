@@ -3,3 +3,5 @@
 #3.github配置ssh  -key
 #4.访问远程Github
 #5.删除仓库
+#6.学习使用git
+#7.给git加分支
