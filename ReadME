@@ -1,3 +1,4 @@
 1.开始使用git学习
 2.终于知道是什么情况啦
 3.在idea中配置git远程仓库路径: 项目右键->git->repository->remotes 添加远程仓库地址
+4.在idea中直接操作,不使用命令
