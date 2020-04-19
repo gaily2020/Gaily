@@ -1,2 +1,3 @@
 1.新建本地分支-day01
 2.修改day01分支并提交到远程仓库
+3.修改远程仓库地址: git remote set-url origin git@github.com:gaily2020/demo.git
