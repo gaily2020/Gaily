@@ -1,4 +1,6 @@
 1.新建本地分支-day01
 2.修改day01分支并提交到远程仓库
-3.修改远程仓库地址: git remote set-url origin git@github.com:gaily2020/demo.git
-4.
+3.修改远程仓库地址: git remote set-url origin git@github.com:gaily2020/Gaily.git   Gaily为仓库的名字
+4.添加缓存区 git add .
+5.添加到本地虚拟库 git commit -m "新建分支传递到远程仓库"
+6.推送到远程仓库 git push
